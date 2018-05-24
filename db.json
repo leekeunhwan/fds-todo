@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "title": "내일은 공부를 더 열심히 하자",
+      "complete": false,
+      "id": 1
+    },
+    {
+      "title": "이렇게",
+      "complete": false,
+      "id": 2
+    },
+    {
+      "title": "더 화이팅을 갖고!",
+      "complete": false,
+      "id": 3
+    }
+  ]
+}

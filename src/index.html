@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>중간 프로젝트 템플릿</title>
   <link rel="stylesheet" href="./index.scss">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </head>
+
 <body>
-  <h1>중간 프로젝트 템플릿</h1>
+  <div class="root"></div>
+  <template id="todos-list">
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper  indigo darken-3">
+          <span class="brand-logo center">
+            <b>To Do List</b>
+          </span>
+          <i class="material-icons right">
+            <button class="todos-list__add waves-effect waves-light indigo accent-1 btn">할일 추가하기</button>
+          </i>
+          <ul id="nav-mobile" class="hide-on-med-and-down">
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+      <button class="todos-list__add waves-effect waves-light btn">할일 추가하기</button>
+    </ul>
+    <div class="todos-list center"></div>
+  </template>
+
+  <template id="todos-item">
+    <p class="todos-item__title"></p>
+    <button class="todos-item__finish">완료</button>
+    <button class="todos-item__edit">수정</button>
+    <button class="todos-item__delete">삭제</button>
+    <br>
+  </template>
+
   <script src="./index.js"></script>
 </body>
+
 </html>
