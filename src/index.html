@@ -31,7 +31,9 @@
     <ul class="sidenav" id="mobile-demo">
       <button class="todos-list__add waves-effect waves-light btn">할일 추가하기</button>
     </ul>
-    <div class="todos-list center"></div>
+    <b>
+      <div class="todos-list center"></div>
+    </b>
   </template>
 
   <template id="todos-item">
@@ -40,6 +42,14 @@
     <button class="todos-item__edit">수정</button>
     <button class="todos-item__delete">삭제</button>
     <br>
+  </template>
+
+  <template id="todos-loading">
+    <div class='loader'>
+      <div class='article'>
+        <div class='page'></div>
+      </div>
+    </div>
   </template>
 
   <script src="./index.js"></script>

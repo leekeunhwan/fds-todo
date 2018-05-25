@@ -15,7 +15,8 @@ body {
       right: 0;
       background-color: rgba(0, 0, 0, 0.5);
       color: white;
-      content: 'Loading...'
+      content: 'Now Loading...';
+      font-size: 30px;
     }
   }
 }
@@ -44,4 +45,8 @@ button {
 button:hover {
   background: white;
   color: black;
+}
+
+.todos-list__add {
+  margin-right: 5rem
 }

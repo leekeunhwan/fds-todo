@@ -51,6 +51,7 @@ async function indexPage() {
   rootEl.classList.remove('root--loading')
   const listFragment = document.importNode(templates.todoList, true);
 
+
   listFragment.querySelector('.todos-list__add').addEventListener('click', e => {
     todoAdd();
   })
